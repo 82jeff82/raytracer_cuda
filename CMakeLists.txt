@@ -28,6 +28,8 @@ include(CTest)
 if(BUILD_TESTING)
 
   add_executable(raytracer main.cc)
+  target_compile_options(raytracer PRIVATE -Wall -g3)
+
 
   #set_target_properties(particle_test PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
   #target_link_libraries(particle_test PRIVATE particles)
