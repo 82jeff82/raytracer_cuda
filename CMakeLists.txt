@@ -27,7 +27,7 @@ include(CTest)
 
 if(BUILD_TESTING)
 
-  add_executable(raytracer main.cc)
+  add_executable(raytracer main.cc vec3.h color.h)
   target_compile_options(raytracer PRIVATE -Wall -g3)
 
 
